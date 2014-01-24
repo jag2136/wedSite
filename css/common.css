@@ -1,0 +1,595 @@
+/**
+ *     Color Scheme info until we get LESS/SASS going
+ *
+ * Pale pink #FFD2CE
+ * Less pale #FFBCD2
+ *
+ * Font main #333333
+ */
+
+/**
+ * 	Fonts
+ */
+@font-face
+{
+    font-family: 'Lobster';
+    src: url('../fonts/Lobster_1.3.eot?') format('embedded-opentype'),
+         url('../fonts/Lobster_1.3.otf') format('opentype');      
+}
+@font-face
+{
+    font-family: 'Josefin Sans Thin';
+    src: url('../fonts/JosefinSans-Thin.eotf?') format('embedded-opentype'),
+         url('../fonts/JosefinSans-Thin.ttf') format('truetype');  
+}
+@font-face
+{
+    font-family: 'Josefin Sans';
+    src: url('../fonts/JosefinSans-Regular.eotf?') format('embedded-opentype'),
+         url('../fonts/JosefinSans-Regular.ttf') format('truetype');  
+}
+
+/* CSS reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+img
+{
+    max-width:                  100%;
+}
+
+/**
+ *     Large containers
+ */
+
+body
+{
+	font-family:               'Josefin Sans', Verdana, sans-serif;
+	font-size:                 12px;
+	color:                     #333333;
+
+    padding:                   0px;
+    margin:                    0px;
+}
+
+/**
+ *  Site banner
+ */
+div.bannerImg
+{
+    margin:                 0 auto;
+    background-repeat:      no-repeat;
+    background-attachment:  fixed;
+    background-position:    center top;
+}
+/* Fallback to below if page-specific banner not provided */
+div.topBanner
+{
+    height:                 768px;
+    background-image:       url("../img/homeBanner.jpg");
+}
+div.pattern
+{
+    background:             url("../img/pattern.png") repeat;
+    width:                  100%;
+    height:                 100%;
+    position:               relative;
+}
+.bannerImg .contents
+{
+    position:               relative;
+    margin:                 0 auto;
+    width:                  80%;
+    height:                 100%;
+}
+div.bannerBtm
+{
+    height:                 20px;
+    background-color:       #FFBCD2;
+}
+
+/**
+ *  Menu and Date
+ */
+.hugeTitle
+{
+    position:               relative;
+    margin:                 0px auto;
+	text-align:				center;
+}
+.hugeTitle h1
+{
+    font-family:            'Lobster';
+    color:                  #FFFFFF;
+    
+	font-size:              180px;
+    line-height:            180px;
+    font-weight:            normal;
+}
+.hugeTitle.ultraHuge h1
+{
+    font-size:              275px;
+    line-height:            344px;
+}
+div.menu
+{
+    position:               absolute;
+    right:                  0px;
+    bottom:                 50px;
+    color:                  #FFFFFF;
+}
+.menu div.title
+{
+    font-size:              65px;
+    font-family:			'Josefin Sans Thin'
+}
+.menu div.item
+{
+    padding:                1px 0px;
+
+    /*Contains floated p elements*/
+    overflow:               auto;
+}
+.menu div.item .itemText
+{
+    font-family:            'Lobster';
+    font-size:              28px;
+    text-align:             right;
+    text-shadow:            3px 3px #555555;
+	line-height:		    35px;    /* Hard-setting to override Bootstrap default of 20 */
+
+    cursor:                 pointer;
+
+    float:                  right;
+    padding:                0px 3px 0px 0px;
+    margin:                 0px;
+}
+
+/**
+ *     Page Bottom
+ */
+div.pageBtm
+{
+    height:                 100px;
+    background-color:       #999999;
+}
+
+/**
+ *     Content and Titles
+ */
+div.row div.title
+{
+    font-family:                'Lobster';
+    font-size:                  22px;
+
+    text-align:                 center;
+}
+div.content, section
+{
+    font-size:                  15px;
+    line-height:                18px;
+}
+div.content
+{
+    padding:                    8px 0px 0px 0px;
+}
+div.content p
+{
+    margin-bottom:              12px;
+}
+
+/**
+ *      Section titles
+ */
+.sectionTitle
+{
+    font-family:				'Josefin Sans Thin';
+    /*font-weight:                100;*/
+    font-size:                  70px;
+   	line-height:				70px;  /* Hard-setting to override Bootstrap default of 20 */
+}
+h2.lrgLeftTitle
+{
+    font-family:                'Lobster';
+    font-weight:                normal;
+    font-size:                  30px;
+
+    text-align:                 left;
+}
+p.isolatedHuge
+{
+    font-family:                'Josefin Sans Thin';
+    font-size:                  40px;
+    
+    line-height:                50px;
+    text-align:                 center;
+    
+    margin:                     25px 0px 28px 0px;
+}
+
+/**
+ *     Image styles
+ */
+img.roundedEdges
+{
+   border-radius:				15px;
+}
+
+/**
+ *     Dividers
+ */
+div.thinLine
+{
+    /*height:                 1px;
+    background-color:       #FFD2CE;*/
+    height:                 30px;
+    border-style:           solid;
+    border-color:           #FFBCD2;
+    border-width:           1px 0px 0px;
+    border-radius:          20px 20px 20px 20px;
+}
+.divider
+{
+    width:                  100%;
+    margin:                 0 auto;
+}
+/** Below from http://css-tricks.com/simple-styles-for-horizontal-rules/ **/
+hr.style-seven
+{
+    height:                 30px;
+    border-style:           solid;
+    border-color:           #999999;
+    border-width:           1px 0 0 0;
+    border-radius:          20px;
+}
+hr.style-seven:before
+{ /* Not really supposed to work, but does */
+    display:                block;
+    content:                "";
+    height:                 30px;
+    margin-top:             -31px;
+    border-style:           solid;
+    border-color:           #999999;
+    border-width:           0 0 1px 0;
+    border-radius:          20px;
+}
+
+/**
+ *     Circles and Colored Labels
+ */
+.smCircle
+{
+    width:                  12px;
+    height:                 12px;
+    background-color:       #FFBCD2;
+    border-radius:          6px;
+}
+.vSmCircle
+{
+    width:                  8px;
+    height:                 8px;
+    background-color:       #FFBCD2;
+    border-radius:          4px;    
+}
+.roundedLabel
+{
+    background-color:       #FFBCD2;
+    border-radius:          15px;
+
+    padding:                5px 10px 2px 10px;
+
+    line-height:            25px;
+    font-family:            Lobster;
+    font-size:              20px;
+}
+.roundedLabel.diffColors
+{
+    background-color:       #999999;
+    color:					#FFFFFF;	
+}
+.roundedLabel.lrgLabel
+{
+    border-radius:          25px;
+    padding:                10px 25px 6px 25px;
+    line-height:            35px;
+    font-size:              30px;    
+}
+.roundedWire
+{
+    border:                 1px solid #999999;
+    border-radius:          15px;
+
+    padding:                5px 10px;
+
+    line-height:            20px;
+    font-size:              15px;
+}
+.noWire
+{
+    padding:                5px 10px;
+
+    line-height:            25px;
+    font-size:              15px;
+}
+
+/**
+ *     Alternate text styling
+ */
+div.whiteText
+{
+    color:                  #FFFFFF;
+    font-size:              18px;
+    line-height:            22px;
+}
+div.whiteText.small
+{
+    font-size:              15px;
+}
+
+/**
+ *     Vertical Spacers
+ */
+div.sectionSpacer
+{
+    height:                 30px;
+}
+div.vLrgSpacer
+{
+    height:                 18px;
+}
+div.lrgSpacer
+{
+    height:                 10px;
+}
+div.medSpacer
+{
+    height:                 7px;
+}
+div.smSpacer
+{
+    height:                 4px;
+}
+
+/**
+ *     Horizontal Spacers
+ */
+.fullWidth
+{
+    width:                  100%;
+}
+.smHSpacer
+{
+    width:                  10px;
+}
+.smPHSpacer
+{
+    width:                  1%;
+}
+
+/**
+ *     Padding
+ */
+div.lPad5
+{
+    padding-left:          5px;
+}
+div.lPad10
+{
+    padding-left:          10px;
+}
+div.lPad20
+{
+    padding-left:          20px;
+}
+div.rPad5
+{
+    padding-right:          5px;
+}
+div.rPad10
+{
+    padding-right:          10px;
+}
+div.rPad20
+{
+    padding-right:          20px;
+}
+div.vertPad
+{
+	padding-top:			15px;
+	padding-bottom:			15px;
+}
+
+/**
+ *		Line Height
+ */
+.lineHeight20
+{
+	line-height:			20px;
+}
+
+/**
+ *     Div Height
+ */
+.h0
+{
+    height:                 0px;
+}
+
+/**
+ *     Float
+ */
+.fLeft
+{
+    float:                  left;
+}
+.fRight
+{
+    float:                  right;
+}
+.containsFloats
+{
+    overflow:           	hidden;
+}
+.clrFloat
+{
+    clear:                  both;
+    height:                 0;
+}
+
+/**
+ *     Alignment
+ */
+.centered
+{
+    margin:                 0 auto;
+}
+.mLeft10
+{
+    margin-left:            10px;
+}
+.mLeft20
+{
+    margin-left:            20px;
+}
+.mRight5
+{
+    margin-right:           5px;
+}
+.mRight10
+{
+    margin-right:           10px;
+}
+.mRight20
+{
+    margin-right:           20px;
+}
+.mRight30
+{
+    margin-right:           30px;    
+}
+.mTop2
+{
+    margin-top:             2px;
+}
+.mTop5
+{
+    margin-top:             5px;
+}
+.mTop10
+{
+	margin-top:				10px;
+}
+.mTop15
+{
+    margin-top:             15px;
+}
+.mTop20
+{
+    margin-top:             20px;
+}
+.mBottom10
+{
+    margin-bottom:          10px;
+}
+.mBottom5
+{
+	margin-bottom:			5px;
+}
+.mBottom7
+{
+    margin-bottom:          7px;
+}
+.txtRight
+{
+	text-align:				right;
+}
+.textCentered
+{
+    text-align:             center;
+}
+
+/**
+ *     Element width
+ */
+.width50
+{
+    width:                  50%;
+}
+
+/**
+ *     Text effects
+ */
+.boldText
+{
+    font-weight:            bold;
+}
+.pinkText
+{
+    color:                  #FFBCD2;
+}
+.textShadow
+{
+    text-shadow:            3px 3px #555555;
+}
+.nobr
+{
+    white-space:            nowrap;
+}
+.uCase
+{
+    text-transform:         uppercase;
+}
+
+/**
+ *		Visibility and Display
+ */
+.hideThis
+{
+	display:				none;
+}
+.iBlock
+{
+    display:                inline-block;
+}
+
+/**
+ * 		Media Queries
+ */
+@media screen and (max-width: 900px)
+{
+	.hugeTitle.ultraHuge h1
+	{
+		font-size:			180px;
+		line-height:        180px;
+	}
+}
+@media screen and (max-width: 600px)
+{
+    .hugeTitle h1
+    {
+        font-size:          85px;
+        line-height:        85px;
+    }
+	.hugeTitle.ultraHuge h1
+	{
+		font-size:			100px;
+		line-height:        100px;
+	}
+}

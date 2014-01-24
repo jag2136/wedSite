@@ -1,0 +1,78 @@
+/**
+ *     Large containers
+ */
+body
+{
+	/*height:                    2000px; */
+}
+
+/**
+ *     Page-specific banner
+ */
+div.topBanner
+{
+    height:                 754px;
+    background-image:       url("../img/guestInfo/castleCloud.jpg");
+}
+
+/**
+ *     Content Styling
+ */
+div.contentSquare
+{
+    /*border:                 1px solid #AAAAAA;*/
+   
+    border-radius:          12px;
+    background-color:       #CCCCCC;
+    cursor:                 pointer;
+    margin:                 0px 6px 6px 0px;
+    
+    padding:                15px;
+}
+div.contentSquare:hover, div.contentSquare.expanded
+{
+    background-color:       #999999;
+}
+div.row div.title
+{
+    text-align:             left;
+    color:                  #FFFFFF;
+    font-size:              27px;
+}
+div.contentSquare div.hiddenContent
+{
+    padding:                25px 20px 0px 20px;
+    cursor:                 default;
+}
+div.whiteTitle
+{
+    color:                  #FFFFFF;
+    font-size:              27px;
+}
+div.whiteTitle.wire
+{
+    padding:                7px 10px 4px 10px;
+    border:                 1px solid #FFFFFF;
+    line-height:            22px;
+    font-size:              22px;
+    border-radius:          15px;
+
+    text-transform:         uppercase;
+    cursor:                 pointer;
+}
+div.whiteTitle.button
+{
+    padding:                7px 10px 4px 10px;
+    line-height:            22px;
+    border-radius:          15px;
+    border:                 1px solid #999999;
+    background:             #FFFFFF;
+    color:                  #999999;
+}
+div.whiteTitle.wire:hover
+{
+    border:                 1px solid #FFFFFF;
+    background:             #FFFFFF;
+    color:                  #999999;    
+}
+

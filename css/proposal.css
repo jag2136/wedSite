@@ -1,0 +1,33 @@
+/**
+ *     Large containers
+ */
+body
+{
+	/*height:                    2000px; */
+}
+
+/**
+ *     Page-specific banner
+ */
+div.topBanner
+{
+    height:                 529px;
+    background-image:       url("../img/weddingPartyBanner.jpg");
+}
+
+/**
+ *     Story styling
+ */
+.storyCol
+{
+    padding-top:            5px;
+    /*padding-left:           5%;
+    padding-right:          5%;*/
+
+    font-size:              14px;
+    line-height:            19px;
+}
+.wordCount
+{
+    font-size:              18px;
+}

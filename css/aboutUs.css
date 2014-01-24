@@ -1,0 +1,90 @@
+/**
+ *     Page-specific banner
+ */
+div.topBanner
+{
+    height:                 832px;
+    background-image:       url("../img/jk_racers_sm.jpg");
+}
+
+/**
+ *     Content styling
+ */
+div.specialContent
+{
+    font-size:                  16px;
+    line-height:                18px;
+    padding:                    10px 9%;
+}
+.nav-pills > li > a
+{
+    font-size:              14px;
+    color:                  #333333;
+    outline:                0;
+    border:                 1px solid #FFFFFF;
+    border-radius:          10px;
+}
+.nav-pills > li.active > a, .nav-pills > li.active > a:focus
+{
+    background-color:       #FFFFFF;
+    border:                 1px solid #AAAAAA;
+    color:                  #333333;
+}
+.nav-pills > li.active > a:hover
+{
+    background-color:       #FFFFFF;
+    color:                  #333333;
+}
+div.content
+{
+    padding:                0px;
+}
+div.aboutPanel div.content
+{
+    border:                 1px solid #AAAAAA;
+    border-radius:          10px;
+    min-height:             260px;
+    
+    padding:                15px 10px 15px 15px;
+}
+div.lowerRightAbs
+{
+    position:               absolute;
+    right:                  25px;
+    bottom:                 15px;
+}
+
+/**
+ *     Custom labels
+ */
+.smLabel
+{
+    background-color:       #999999;
+    color:                  #FFFFFF;    
+    border-radius:          15px;
+    border:                 1px solid #999999;
+
+    padding:                5px 10px 4px 10px;
+
+    line-height:            14px;
+    font-family:            'Josefin Sans';
+    font-size:              14px;
+}
+.smRoundedWire
+{
+    border:                 1px solid #999999;
+    border-radius:          15px;
+
+    padding:                5px 10px 4px 10px;
+
+    line-height:            14px;
+    font-size:              14px;    
+}
+.aboutLabel
+{
+    cursor:                 default;
+}
+.aboutLabel:hover
+{
+    background-color:       #FFF0F8;
+}

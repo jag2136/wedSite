@@ -1,0 +1,51 @@
+/**
+ *     Page-specific banner
+ */
+div.topBanner
+{
+    height:                 465px;
+    background-image:       url("../img/kymPassageSm.jpg");
+}
+
+/**
+ *     Logo styling
+ */
+div.logoContainer
+{
+    /*border-radius:          50px;*/
+    border:                 4px solid #FFFFFF;
+    width:                  1000px;
+    
+    margin-bottom:          30px;
+    
+    cursor:                 pointer;
+}
+div.logoContainer.WS
+{
+    background-image:       url("../img/registry/WSlogo.png");
+    background-size:        1000px 162px;
+    height:                 162px;
+}
+div.logoContainer.B
+{
+    background-image:       url("../img/registry/Blogo.png");    
+    background-size:        1000px 221px;
+    height:                 221px;
+}
+div.logoContainer:hover
+{
+    border:                 4px solid #000000;
+}
+/*div.logoContainer.WS:hover
+{
+    background-image:       url("../img/registry/WSlogoInvert.png");
+}
+div.logoContainer.B:hover
+{
+    background-image:       url("../img/registry/BlogoInvert.png");
+}*/
+img.centered
+{
+    display:                block;
+    margin:                 0px auto;
+}

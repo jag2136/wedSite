@@ -1,0 +1,16 @@
+/**
+ *     Large containers
+ */
+body
+{
+}
+
+/**
+ *     Page-specific banner
+ */
+div.topBanner
+{
+    height:                 768px;
+    background-image:       url("../img/homeBanner.jpg");
+}
+

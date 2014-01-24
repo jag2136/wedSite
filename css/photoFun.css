@@ -1,0 +1,16 @@
+/**
+ *     Large containers
+ */
+body
+{
+	/*height:                    2000px; */
+}
+
+/**
+ *     Page-specific banner
+ */
+div.topBanner
+{
+    height:                 699px;
+    background-image:       url("../img/photoFun/all2.jpg");
+}
