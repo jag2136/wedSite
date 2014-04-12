@@ -10,13 +10,49 @@ div.topBanner
 /**
  *     Content styling
  */
-.nav-pills > li > a
+.rsvpContainer
 {
-    font-size:              15px;
-    color:                  #333333;    
+    min-height:             500px;
 }
-.nav-pills > li.active > a, .nav-pills > li.active > a:hover
+.formDesc
 {
-    background-color:       #333333;
-    color:                  #FFBCD2;
+    font-family:            'Josefin Sans Thin';
+    font-size:              25px;
+    line-height:            32px;
+}
+input
+{
+    border-radius:          8px;
+}
+input:focus
+{
+    outline:                0;
+}
+input[type=text]
+{
+    font-size:              25px;
+    line-height:            25px;
+    padding:                15px 10px;
+
+    color:                  #666666;
+    border:                 1px solid #AAAAAA;
+}
+input[type=submit]
+{
+    transition:             all 0.5s ease;
+    font-size:              20px;
+    line-height:            25px;
+    padding:                10px 40px 5px 40px;
+
+    /*font-family:            "Lobster";*/
+    text-transform:         uppercase;
+    letter-spacing:         2px;
+    color:                  #444444;
+    background:             #DDDDDD;
+    border:                 0;
+}
+input[type=submit]:hover
+{
+    background:             #999999;
+    color:                  #FFFFFF;
 }

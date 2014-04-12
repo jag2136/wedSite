@@ -10,13 +10,23 @@ function Driver()
 	$GLOBALS["page"]->PageTop();
 
     $contentHtml =<<<HTML
-        <p class='isolatedHuge'>We'll have an RSVP system set up on this page in the future</p>
-        <div class='smCircle centered'>&nbsp;</div>
-        <p class='isolatedHuge'>Check back because it will be here</p>    
+        <div class='rsvpContainer'>
+            <div class='smCircle centered'>&nbsp;</div>
+            <p class='isolatedHuge'>Welcome to the robotic RSVP system</p>
+            <div class='sectionSpacer'>&nbsp;</div>
 
+            <div id='passcodeForm'>
+                <input class='dBlock centered' id='passcodeEntry' type='text' placeholder='passcode'>
+                <div class='sectionSpacer'>&nbsp;</div>
+                <input class='dBlock centered' id='passcodeSubmit' type='submit' value='Submit'>
+            </div>
 
-        <div class='sectionSpacer'>&nbsp;</div>
-        <div class='sectionSpacer'>&nbsp;</div>
+            <div class='sectionSpacer'>&nbsp;</div>
+            <div class='sectionSpacer'>&nbsp;</div>
+
+            <div id='rsvpAjaxResp'>
+            </div>
+        </div>
 HTML;
 
     echo $contentHtml;
