@@ -20,15 +20,24 @@ div.topBanner
     font-size:              25px;
     line-height:            32px;
 }
-input
+select
+{
+    cursor:                 pointer;
+}
+select option
+{
+    margin-top:             5px;
+    margin-bottom:          5px;
+}
+input, select
 {
     border-radius:          8px;
 }
-input:focus
+input:focus, select:focus
 {
     outline:                0;
 }
-input[type=text]
+input[type=text], select
 {
     font-size:              25px;
     line-height:            25px;
@@ -55,4 +64,10 @@ input[type=submit]:hover
 {
     background:             #999999;
     color:                  #FFFFFF;
+}
+
+
+select#firstNameEntry
+{
+    width:                  50%;
 }
