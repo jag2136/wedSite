@@ -43,7 +43,7 @@ class Page
 			// Set up pageName (should not have .php ext) and pageTitle (human readable)
 			$reversePageList = array_flip(self::$pageList);
 			$this->pageTitle = $reversePageList[$pageName];
-			
+
 			$pageName = preg_replace("/.php$/", "", $pageName);
 			$this->pageName = $pageName;
 		}
@@ -77,16 +77,19 @@ class Page
 
 		        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
                 <link rel="shortcut icon" href="img/smCircleIcon.png">
-		        
-		        <!-- Boilerplate I think?-->
+
+		        <!-- Boilerplate I think?
 		        <link rel="stylesheet" href="css/normalize.css">
-		        <link rel="stylesheet" href="css/main.css">
-		        
+		        <link rel="stylesheet" href="css/main.css">-->
+
 		        <!-- Bootstrap-->
 				<link rel="stylesheet" href="css/bootstrap.min.css">
-				<link rel="stylesheet" href="css/bootstrap-responsive.min.css">
+				<!--<link rel="stylesheet" href="css/bootstrap-responsive.min.css">
 
-		        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+                <!-- Bootstrap
+                <script src="js/bootstrap.min.js"></script>
+
+		        <script src="js/vendor/modernizr-2.6.2.min.js"></script>-->
 
 		        <!--[if lt IE 7]>
 		            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
@@ -94,11 +97,14 @@ class Page
 
 		        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 		        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.8.2.min.js"><\/script>')</script>
-		        <script src="js/plugins.js"></script>
-		        <script src="js/main.js"></script>
-		        
-                <!-- Bootstrap-->
-				<script src="js/bootstrap.min.js"></script>\n
+
+                <!-- jQuery UI -->
+                <link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/themes/smoothness/jquery-ui.css" />
+                <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
+
+		        <!--<script src="js/plugins.js"></script>
+		        <script src="js/main.js"></script>-->
+
 HTML;
 
 		echo $html;
@@ -111,7 +117,7 @@ HTML;
 			<body>
 EOT;
 		echo $html;
-		
+
         $this->MenuAndBanner();
 	}
 
@@ -206,11 +212,11 @@ HTML;
 				<div class='pageBtm'>
 				    <div class='container'>
 				        <div class='containsFloats mTop10'>
-                            <div class='whiteText uCase fRight'>Email Us</div>			
+                            <div class='whiteText uCase fRight'>Email Us</div>
 				        </div>
 				        <div class='containsFloats'>
 				            <div class='whiteText fRight'>kymandjason1@gmail.com</div>
-            
+
                             <div class='smCircle fRight mTop5 mRight10'>&nbsp;</div>
 				        </div>
 				    </div>
@@ -222,13 +228,13 @@ EOT;
 	}
 
     public function includeCss($page) {
-  
+
         // Common file first
         if(file_exists("./css/common.css"))
         {
             echo "<link rel='stylesheet' href='css/common.css'>\n";
         }
-        
+
         // Page-specific file next (for overrides)
         if(file_exists("./css/$page.css"))
         {
@@ -237,18 +243,18 @@ EOT;
     }
 
     public function includeJs($page) {
-                
+
         // Common file first
         if(file_exists("./js/common.js"))
         {
             echo "<script src='js/common.js'></script>\n";
         }
-        
+
         // Page-specific file next (for overrides)
         if(file_exists("./js/$page.js"))
         {
             echo "<script src='js/$page.js'></script>\n";
-        }        
+        }
     }
 
 

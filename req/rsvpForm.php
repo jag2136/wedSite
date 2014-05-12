@@ -35,3 +35,52 @@
         </div>
     </div>
 </div>
+
+<div class='sectionSpacer'>&nbsp;</div>
+<div class='sectionSpacer'>&nbsp;</div>
+<hr class='style-seven divider width50 centered'>
+<div class='sectionSpacer'>&nbsp;</div>
+
+<form id='guestForm' method='post' action='rsvpHandler.php'>
+    <div class='hideThis' id='dynamicGuestForm'>
+        <!-- To be populated via ajax -->
+    </div>
+
+    <div class='sectionSpacer'>&nbsp;</div>
+
+
+    <div class='hideThis' id='staticForm'>
+        <hr class='style-seven divider width50 centered'>
+        <div class='sectionSpacer'>&nbsp;</div>
+        <div class='row'>
+            <div class='col-sm-5'>
+                <div class='formDesc textCentered'>
+                    <p>Please enter <span class='fontReg'>your</span> email so we can reply.</p>
+                </div>
+                <div class='mTop10'>
+                    <input class='dBlock centered w70 reqd' name='emailEntry' id='emailEntry' type='text' placeholder='Email Address'>
+                    <div class='errText'></div>
+                </div>
+            </div>
+            <div class='col-sm-1'></div>
+            <div class='col-sm-7'>
+                <div class='formDesc textCentered'>
+                    <p>Anything else we should know?</p>
+                </div>
+                <div class='mTop10'>
+                    <textarea class='dBlock centered' name='comments' id='comments' placeholder='Extra info (optional)'></textarea>
+                </div>
+            </div>
+        </div>
+
+        <div class='sectionSpacer'>&nbsp;</div>
+        <div class='smCircle centered'>&nbsp;</div>
+        <div class='sectionSpacer'>&nbsp;</div>
+        <input class='dBlock centered' id='rsvpSubmit' type='submit' value='Submit RSVP'>
+    </div>
+
+</form>
+
+
+<div class='sectionSpacer'>&nbsp;</div>
+<div class='sectionSpacer'>&nbsp;</div>

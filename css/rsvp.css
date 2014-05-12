@@ -12,7 +12,7 @@ div.topBanner
  */
 .rsvpContainer
 {
-    min-height:             500px;
+    min-height:             700px;
 }
 .formDesc
 {
@@ -20,24 +20,33 @@ div.topBanner
     font-size:              25px;
     line-height:            32px;
 }
+.formDesc.fontReg
+{
+    font-family:            'Josefin Sans';
+}
+.radioRow
+{
+    margin-bottom:          30px;
+}
 select
 {
     cursor:                 pointer;
+    background:             #FFFFFF;
 }
 select option
 {
     margin-top:             5px;
     margin-bottom:          5px;
 }
-input, select
+input, textarea, select
 {
     border-radius:          8px;
 }
-input:focus, select:focus
+input:focus, textarea:focus, select:focus
 {
     outline:                0;
 }
-input[type=text], select
+input[type=text], textarea, select
 {
     font-size:              25px;
     line-height:            25px;
@@ -45,6 +54,12 @@ input[type=text], select
 
     color:                  #666666;
     border:                 1px solid #AAAAAA;
+}
+textarea
+{
+    width:                  100%;
+    height:                 200px;
+    overflow:               auto;
 }
 input[type=submit]
 {
@@ -65,9 +80,30 @@ input[type=submit]:hover
     background:             #999999;
     color:                  #FFFFFF;
 }
-
-
+.radioSet label
+{
+    font-size:              18px;
+}
 select#firstNameEntry
 {
     width:                  50%;
+}
+
+form#guestForm .errText
+{
+    margin-top:             5px;
+}
+
+/*** jQuery UI ***/
+.ui-state-default
+{
+    background:             #E2E2E2;
+}
+.ui-state-active
+{
+    background:             #FFFFFF;
+}
+.ui-widget
+{
+    font-family:            'Josefin Sans';
 }
