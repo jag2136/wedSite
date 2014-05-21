@@ -55,7 +55,7 @@
         <div class='row'>
             <div class='col-sm-5'>
                 <div class='formDesc textCentered'>
-                    <p>Please enter <span class='fontReg'>your</span> email so we can reply.</p>
+                    <p>Please enter <span class='fontReg'>your</span> email so we can send a confirmation mail.</p>
                 </div>
                 <div class='mTop10'>
                     <input class='dBlock centered w70 reqd' name='emailEntry' id='emailEntry' type='text' placeholder='Email Address'>
