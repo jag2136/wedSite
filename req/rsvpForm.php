@@ -53,17 +53,27 @@
         <hr class='style-seven divider width50 centered'>
         <div class='sectionSpacer'>&nbsp;</div>
         <div class='row'>
-            <div class='col-sm-5'>
+            <div class='col-sm-6'>
                 <div class='formDesc textCentered'>
-                    <p>Please enter <span class='fontReg'>your</span> email so we can send a confirmation mail.</p>
+                    <p>Please enter <span class='fontReg'>your</span> email so we can send confirmation.</p>
                 </div>
                 <div class='mTop10'>
                     <input class='dBlock centered w70 reqd' name='emailEntry' id='emailEntry' type='text' placeholder='Email Address'>
                     <div class='errText'></div>
                 </div>
+
+                <div class="sectionSpacer">&nbsp;</div>
+
+                <div class='formDesc textCentered'>
+                    <p>Song you'd like played? (We make no guarantees)</p>
+                </div>
+                <div class='mTop10'>
+                    <input class='dBlock centered w70' name='songEntry' id='songEntry' type='text' placeholder='Your song (optional)'>
+                    <div class='errText'></div>
+                </div>
             </div>
             <div class='col-sm-1'></div>
-            <div class='col-sm-7'>
+            <div class='col-sm-5'>
                 <div class='formDesc textCentered'>
                     <p>Anything else we should know?</p>
                 </div>

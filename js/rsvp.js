@@ -142,7 +142,6 @@ var reqFormJs       = function() {
 
             if( curInput.attr('type') !== 'radio' && curInput.val() === "" )
             {
-                console.log("Empty Fields!! name: " + curInput.attr('name'));
                 curInput.parent().find("div.errText").append("Please fill out required field");
                 ok = false;
             }
