@@ -41,7 +41,7 @@
 <hr class='style-seven divider width50 centered'>
 <div class='sectionSpacer'>&nbsp;</div>
 
-<form id='guestForm' method='post' action='rsvpHandler.php'>
+<form id='guestForm' method='post'>
     <div class='hideThis' id='dynamicGuestForm'>
         <!-- To be populated via ajax -->
     </div>

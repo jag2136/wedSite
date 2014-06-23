@@ -23,7 +23,7 @@ function Driver()
 
         // Build and send mails
         $to      = 'kymandjason1@gmail.com, jag2136@gmail.com, kym.smith@gmail.com';
-        $subject = 'OHMY | Wedding RSVP';
+        $subject = 'OHMY | TEST | Wedding RSVP';
         $message = 'RSVP details:<br><pre>' . print_r($_POST, true) . "</pre>";
         $headers = 'From: me@kym-smith.com' . "\r\n" .
             'Reply-To: kymandjason1@gmail.com' . "\r\n" .
