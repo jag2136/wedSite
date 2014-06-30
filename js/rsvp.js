@@ -206,7 +206,7 @@ var reqFormJs       = function() {
             if( $.inArray(lastName, lastNames) < 0 )
             {
                 // Didn't find last name in guest list
-                lastNameParent.append("<div class='errText textCentered mTop10'>No guests found.</div>");
+                lastNameParent.append("<div class='errText textCentered mTop10'>No guests found (Case sensitive).</div>");
             }
             else
             {
