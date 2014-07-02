@@ -106,7 +106,7 @@ function Driver()
         // Build and send mails
         $to      = 'kymandjason1@gmail.com, jag2136@gmail.com, kym.smith@gmail.com';
         $message = 'RSVP details:<br><pre>' . print_r($_POST, true) . '</pre>';
-        $subject = 'OHMY | TEST | Wedding RSVP';
+        $subject = 'OHMY | Wedding RSVP';
 
         $headers = 'From: me@kym-smith.com' . "\r\n";
         $headers .= 'Reply-To: kymandjason1@gmail.com' . "\r\n";
@@ -120,7 +120,7 @@ function Driver()
         // External RSVP confirmation mail to guest
         $headers .= 'Bcc: kymandjason1@gmail.com' . "\r\n";
 
-        $to      = 'jag2136@gmail.com';
+        $to      = $guestEmail;
         $subject = 'Kym & Jason Wedding - RSVP Success';
         $message = 'RSVP details:<br><pre>' . print_r($_POST, true) . "</pre>";
         $message = BuildEmail($_POST);
