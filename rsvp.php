@@ -53,9 +53,11 @@ EOF;
         <p>Thanks for filling out our form- for your confirmation, a summary of those attending/meal choices is below:</p>
         <br>
         <table>
-            <tr><td><strong>Guest</strong></td>
-            <td style='width:20px'>&nbsp;</td>
-            <td><strong>Meal Choice</strong></td></tr>
+            <tr>
+                <td style='border-bottom:1px solid #000000'><strong>Guest</strong></td>
+                <td style='width:20px'>&nbsp;</td>
+                <td style='border-bottom:1px solid #000000'><strong>Meal Choice</strong></td>
+            </tr>
 EOF;
 
         foreach( $peopleAttending as $person )
