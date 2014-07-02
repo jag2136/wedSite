@@ -53,7 +53,9 @@ EOF;
         <p>Thanks for filling out our form- for your confirmation, a summary of those attending/meal choices is below:</p>
         <br>
         <table>
-            <tr><td><strong>Guest</strong></th><td><strong>Meal Choice</strong></th></tr>
+            <tr><td><strong>Guest</strong></td>
+            <td style='width:20px'>&nbsp;</td>
+            <td><strong>Meal Choice</strong></td></tr>
 EOF;
 
         foreach( $peopleAttending as $person )
@@ -61,12 +63,12 @@ EOF;
             $mealChoice = $data[$person . "_mealChoice"];
 
             $displayPerson = str_replace("_", " ", $person);
-            $html .= "<tr><td>$displayPerson</td><td>$mealChoice</td></tr>\n";
+            $html .= "<tr><t>$displayPerson</td><td>&nbsp;</td><td>$mealChoice</td></tr>\n";
         }
         foreach( $peopleMissing as $person)
         {
             $displayPerson = str_replace("_", " ", $person);
-            $html .= "<tr><td>$displayPerson</td><td>(Not attending)</td></tr>\n";
+            $html .= "<tr><td>$displayPerson</td><td>&nbsp;</td><td>(Not attending)</td></tr>\n";
         }
 
         $html .=<<<EOF
