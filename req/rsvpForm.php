@@ -78,7 +78,7 @@
                     <p>Anything else we should know?</p>
                 </div>
                 <div class='mTop10'>
-                    <textarea class='dBlock centered' name='comments' id='comments' placeholder='Extra info (optional)'></textarea>
+                    <textarea class='dBlock centered' name='comments' id='comments' placeholder="Extra info- like allergies, kids' meals, etc. (optional)"></textarea>
                 </div>
             </div>
         </div>
