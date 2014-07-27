@@ -21,14 +21,24 @@ div.topBanner
 div.contentSquare
 {
     /*border:                 1px solid #AAAAAA;*/
-   
+
     border-radius:          12px;
     background-color:       #CCCCCC;
     cursor:                 pointer;
     margin:                 0px 6px 6px 0px;
-    
+
     padding:                15px;
 }
+div.contentSquare a
+{
+    color:                  #0C4372;
+}
+div.contentSquare ul
+{
+    list-style-position:    inside;
+    margin-bottom:          15px
+}
+
 div.contentSquare:hover, div.contentSquare.expanded
 {
     background-color:       #999999;
@@ -43,6 +53,11 @@ div.contentSquare div.hiddenContent
 {
     padding:                25px 20px 0px 20px;
     cursor:                 default;
+}
+div.contentSquare div.hiddenContent p
+{
+    display:                block;
+    margin-bottom:          15px;
 }
 div.whiteTitle
 {
@@ -73,6 +88,6 @@ div.whiteTitle.wire:hover
 {
     border:                 1px solid #FFFFFF;
     background:             #FFFFFF;
-    color:                  #999999;    
+    color:                  #999999;
 }
 
